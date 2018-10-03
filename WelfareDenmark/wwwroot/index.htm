@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>GOTRAIN</title>
@@ -23,11 +23,11 @@
         </button>
           <div id="myDropdown" class="dropdown-content">
             <ul>
-              <li><a href="#home">HOME</a></li>
+              <li><a href="#home">HJEM</a></li>
               <li>
-                  <a href="#" onclick="document.getElementById('signup-form').style.display='block'">SIGN UP</a>
+                  <a href="#" onclick="document.getElementById('signup-form').style.display='block'">REGISTRER</a>
               </li>
-              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#about">OM OS</a></li>
             </ul>
           </div>
       </div>
@@ -37,11 +37,11 @@
   <span onclick="document.getElementById('signup-form').style.display='none'" class="close" title="Luk">X</span>
     <form class="modal-content" action="/action_page.php">
       <div class="container">
-        <h1>Sign Up</h1>
-        <p>Please fill in this form to create an account.</p>
+        <h1>Registrer dig her!</h1>
+        <p>Venligst fyld de relevante informationer ud</p>
         <hr>
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="text" placeholder="Indtast email" name="email" required>
 
         <label for="psw"><b>Adgangskode</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
@@ -50,14 +50,14 @@
         <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
         <label>
-          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Husk mig!
         </label>
 
-        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <p>Ved oprettelse accepterer du vores<a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
         <div class="clearfix">
-          <button type="button" onclick="document.getElementById('signup-form').style.display='none'" class="cancelbtn">Cancel</button>
-          <button type="submit" class="signupbtn">Sign up</button>
+          <button type="button" onclick="document.getElementById('signup-form').style.display='none'" class="cancelbtn">Luk</button>
+          <button type="submit" class="signupbtn">Registrer</button>
         </div>
       </div>
     </form>
