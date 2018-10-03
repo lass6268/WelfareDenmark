@@ -28,16 +28,6 @@ header h1 {
   text-transform: uppercase;
 }
 
-header h1::after {
-  background: black;
-  bottom: -10px;
-  content: "";
-  display: block;
-  height: 10px;
-  position: relative;
-  width: 100px;
-}
-
 #right-menuicon {
   left: 0;
 }
@@ -224,6 +214,8 @@ hr {
 
 .addressField p {
   text-align: center;
+  font-size: larger;
+  text-transform: uppercase;
 }
 
 .mapouter {

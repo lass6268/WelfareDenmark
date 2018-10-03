@@ -1,7 +1,81 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GOTRAIN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <script src="myscripts.js"></script>
+</head>
+<body>
+  <div class="body-wrapper">
+    <header>
+      <h1>GoTrain</h1>
+    </header>
+    <nav>
+      <div class="dropdown" id="dropdownmenu">
+        <button id="dropdown-menu-button">
+          <div id="right-menuicon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+          <div id="myDropdown" class="dropdown-content">
+            <ul>
+              <li><a href="#home">HJEM</a></li>
+              <li>
+                  <a href="#" onclick="document.getElementById('signup-form').style.display='block'">REGISTRER</a>
+              </li>
+              <li><a href="#about">OM OS</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div id="signup-form" class="modal">
+  <span onclick="document.getElementById('signup-form').style.display='none'" class="close" title="Luk">X</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Registrer dig her!</h1>
+        <p>Venligst fyld de relevante informationer ud</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Indtast email" name="email" required>
 
-<h2>Index</h2>
+        <label for="psw"><b>Adgangskode</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
 
+        <label for="psw-repeat"><b>Gentag adgangskode</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Husk mig!
+        </label>
+
+        <p>Ved oprettelse accepterer du vores<a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('signup-form').style.display='none'" class="cancelbtn">Luk</button>
+          <button type="submit" class="signupbtn">Registrer</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  <div>
+    <form action="/action_page.php" class="addressField">
+      <p>Indtast din adresse her, og se hvem der træner i dit nærområde!</p> <input type="text" name="adress" style="text-align:center;">
+    </form>
+  </div>
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=odense&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <a href="https://www.pureblack.de">homepage erstellen</a>
+    </div>
+  </div>
+  
+  <!-- END WEBSITE -->
+  </div>
+</body>
+</html>
