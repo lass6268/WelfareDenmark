@@ -225,6 +225,7 @@ hr {
 .addressField p {
   text-align: center;
   font-size: larger;
+  text-transform: uppercase;
 }
 
 .mapouter {
