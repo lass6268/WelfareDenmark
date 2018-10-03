@@ -27,7 +27,7 @@ namespace WelfareDenmark
                     name: "default",
                     template: "{controller=Home}/{action=index}/{id?}");
             });
-            app.UseStaticFiles();
+            app.UseFileServer();
         }
 
         
