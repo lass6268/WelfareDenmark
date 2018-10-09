@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using WelfareDenmark.Model;
 
 namespace WelfareDenmark
 {
@@ -15,6 +17,9 @@ namespace WelfareDenmark
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionstring = "Server=EALSQL1.eal.local; Database = DB2017_C09; User Id = user_C09; PassWord=SesamLukOp_09;";
+            services.AddDbContext<TrainingDbContext>(options => options.UseSqlServer(connectionstring));
+               
             services.AddMvc();
         }
 
