@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+
+<div id="signup-form" class="modal">
+        <span onclick="document.getElementById('signup-form').style.display='none'" class="close" title="Luk">X</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Registrer dig her!</h1>
+                <p>Venligst fyld de relevante informationer ud</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Indtast email" name="email" required>
+
+                <label for="psw"><b>Adgangskode</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Gentag adgangskode</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Husk mig!
+                </label>
+
+                <p>Ved oprettelse accepterer du vores<a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('signup-form').style.display='none'" class="cancelbtn">Luk</button>
+                    <button type="submit" class="signupbtn">Registrer</button>
+                </div>
+            </div>
+        </form>
+    </div>
