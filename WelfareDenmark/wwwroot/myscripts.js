@@ -35,11 +35,3 @@ document.onclick = function(event) {
        modal.style.display = "none";
    }
 }
-
-$(function () {
-    $('#RegisterButton').on("click", function () {
-        $.get('@Url.Action("RegisterAction", "Home")', function (data) {
-            $("#signup-form").html(data);
-        });
-    }
-});
