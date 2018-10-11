@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class="body-wrapper">
+        <header>
+            <h1>GoTrain</h1>
+        </header>
         <nav>
             <div class="dropdown" id="dropdownmenu">
                 <button id="dropdown-menu-button">
@@ -21,11 +24,9 @@
                 </button>
                 <div id="myDropdown" class="dropdown-content">
                     <ul>
-                        <li><a href="#home">HJEM</a></li>
-                        <li>
-                            <a href="#" onclick="document.getElementById('signup-form').style.display='block'">REGISTRER</a>
-                        </li>
-                        <li><a href="#about">OM OS</a></li>
+                        <li><a asp-controller="Home" asp-action="Index">HJEM</a></li>
+                        <li><a asp-controller="Home" asp-action="Signup">REGISTRER</a></li>
+                        <li><a asp-controller="Home" asp-action="About">OM OS</a></li>
                     </ul>
                 </div>
             </div>
